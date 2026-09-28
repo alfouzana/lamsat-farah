@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #c2577a;
+  --color-brand-dark: #a3405f;
+  --color-gold: #b8894a;
+  --color-cream: #fdf8f5;
+  --color-ink: #2b1f24;
+  --font-sans: "Tajawal", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Amiri", serif;
+}
+
+html { scroll-behavior: smooth; }
+
+.card { @apply rounded-3xl border border-rose-100 bg-cream/60 p-4 transition hover:-translate-y-1 hover:shadow-lg; }
+.chip { @apply rounded-xl border border-rose-100 bg-white px-3 py-2; }
+.field { @apply mt-1 w-full rounded-xl border border-rose-200 bg-cream/50 px-3 py-2 outline-none focus:border-brand focus:ring-2 focus:ring-brand/20; }
+.img-card { @apply overflow-hidden bg-gradient-to-br from-rose-100 via-cream to-amber-100; }
+.img-card img { @apply h-full w-full object-cover; }
